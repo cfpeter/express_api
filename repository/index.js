@@ -2,6 +2,7 @@ const config = require('../config')
 const person = require( "./person" ); 
 const auth = require('./auth')
 const user = require('./user')
+const customer = require('./customer')
 const sql = require( "mssql" );
 
 const client = async () => {
@@ -38,7 +39,8 @@ const client = async () => {
             pool = await new sql.ConnectionPool(config.sql)
             .connect()
             .then(pool => {
-                console.log('Connected to MSSQL')
+
+                console.log('Connected to MSSQL' )
                 return pool
             })
             .catch(async err => {
@@ -59,9 +61,10 @@ const client = async () => {
    };
 
    return {
-       person: await person.register( {sql , getConnection}  ),
-       auth: await auth.register( {sql , getConnection}  ),
-       user: await user.register( {sql , getConnection}  )
+       person:  await person.register( {sql , getConnection}  ),
+       auth:    await auth.register( {sql , getConnection}  ),
+       customer:await customer.register( {sql , getConnection}  ),
+       user:    await user.register( {sql , getConnection}  )
    };
 };
 

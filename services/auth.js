@@ -10,44 +10,45 @@ module.exports = async () =>{
     let db = await dataClient();
      
     const addUserRegister = async (payload) => {
-        try {  
-            const {firstName, lastName, email,userName,passCode} = payload;
-            await userRegisterValidation(firstName, lastName, email,userName,passCode);
+        try {   
+            const {firstName, lastName,gender, email,userName,passCode, customerTypeName } = payload;
+            await userRegisterValidation(firstName, lastName,gender, email,userName,passCode, customerTypeName);
             
             //hash and salt the passCode
             const salt = await bcrypt.genSalt(10)
             const hashSaltPass = await bcrypt.hash(payload.passCode , salt);
              
-            const schema = Joi.object().keys({
-                firstName: Joi.string().alphanum().min(3).max(30).required()
-            }) 
-            const validationResult = Joi.validate(payload, schema);
-            // console.log(validationResult);
             const data = 
             {
                 firstName: payload.firstName, 
                 lastName: payload.lastName, 
                 email: payload.email,   
+                gender: payload.gender,
                 userName: payload.userName,
                 passCode: hashSaltPass,
                 salt: salt,
-                createdBy: `${payload.firstName} ${payload.lastName}`
+                createdBy: `${payload.firstName} ${payload.lastName}`,
+                customerTypeName: payload.customerTypeName
             }
 
-            const result = await db.auth.addUserRegister(data);
-            console.log(result)
+            const result = await db.auth.addUserRegister(data); 
 
-            const token = jwt.sign({
-                id: result.recordset[0].CustomerID, 
-                name: `${result.recordset[0].firstName} ${result.recordset[0].lastName}`
-            }, config.jwtPrivateKey );
+            const token = jwt.sign(
+                {
+                    id: result.recordset[0].CustomerID, 
+                    name: `${result.recordset[0].firstName} ${result.recordset[0].lastName}`
+                },
+                config.jwtPrivateKey );
              
             return token
         } catch(e) { 
-            if(!e.name)
+            if(!e.name){
                 throw new Error(e);
-            else
+            }
+            else{
                 throw new Error('Something went wrong. Please try again later.')
+            }
+                
         }
     }
 
@@ -58,7 +59,7 @@ module.exports = async () =>{
             
             //get login be username
             const user = await db.auth.getLoginByUserName(userName)
-          
+            
             //if login doesn't exist
             if( user.recordset.length == 0 || user.recordset[0].userName !== userName) 
                 throw ('Invalid UserName or Password.'); 

@@ -21,25 +21,32 @@ module.exports.loginValidation = async (userName, passWord) => {
 module.exports.userRegisterValidation = async (
     firstName,
     lastName,
+    gender,
     email,
     userName,
-    passCode
+    passCode,
+    customerTypeName
 ) => {
     try {
         const schema = Joi.object().keys({
             firstName: Joi.string().min(3).max(30).required(),
             lastName: Joi.string().min(3).max(30).required(),
+            gender: Joi.string().min(3).max(30).required(),
             email: Joi.string().min(3).max(30).required(),
             userName: Joi.string().min(3).max(30).required(),
-            passCode: Joi.string().min(3).max(30).required()
+            passCode: Joi.string().min(3).max(30).required(),
+            customerTypeName: Joi.required(),
+            
         }) 
 
         await Joi.validate({
             firstName,
             lastName,
+            gender,
             email,
             userName,
-            passCode
+            passCode,
+            customerTypeName
         }, schema , function (err, value) { 
             if(err !== null)
                 throw( err.details[0].message)

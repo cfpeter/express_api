@@ -10,7 +10,7 @@ const getPerson = async (req, res, next) => {
     
         next();
     } catch(e) {
-        console.log(e)
+        throw (e) 
     }
 };
 
@@ -20,8 +20,7 @@ const addPerson = async (req, res, next) =>{
     try {
         const ps = await personService();   
         
-        const result = await ps.addPerson(req.body);
-        // console.log(result);
+        const result = await ps.addPerson(req.body); 
         res.status(200).send(result)
         next()
     } catch (error) {
@@ -29,8 +28,22 @@ const addPerson = async (req, res, next) =>{
     }
 }
 
+const updatePerson = async (req, res, next) =>{
+    try { 
+        const ps = await personService();   
+        
+        const result = await ps.updatePerson(req.body); 
+        res.status(200).send(result)
+        next()
+    } catch (error) {
+        res.status(401).json(error)
+        throw new Error(error)
+    }
+}
+
  
 module.exports = {
     getPerson,
-    addPerson
+    addPerson,
+    updatePerson
 }

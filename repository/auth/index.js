@@ -23,36 +23,22 @@ const register = async ( { sql, getConnection } ) => {
         }
     };
 
-    const addLogin = async ( { 
-        customerID,
-        userName,
-        passCode,
-        salt, 
-        createrBy
-     } ) => {
+    
 
-        const cnx = await getConnection();
-        const request = await cnx.request();
-        request.input( "customerID", sql.VarChar( 150 ), customerID );
-        request.input( "userName", sql.VarChar( 150 ), userName );
-        request.input( "passCode", sql.VarChar( 255 ), passCode );
-        request.input( "salt"   , sql.VarChar( 255 ), salt );
-        request.input( "createrBy", sql.VarChar( 150 ), createrBy );
-        request.input( "updatedBy", sql.VarChar( 150 ), createrBy );
-        return request.query( sqlQueries.addLogin );
-    };
-
-    const addUserRegister = async ( { firstName, lastName, email, userName, passCode, salt, createdBy } ) => {
-
+    const addUserRegister = async ( { 
+        firstName, lastName, gender, email, userName, passCode, salt, createdBy,customerTypeName } ) => {
+    
         try {
             const cnx = await getConnection();
             const request = await cnx.request();
             request.input( "firstName"  , sql.VarChar( 100 ), firstName );
             request.input( "lastName"   , sql.VarChar( 100 ), lastName );
+            request.input( "gender"     , sql.VarChar( 100 ), gender );
             request.input( "email"      , sql.VarChar( 150 ), email ); 
             request.input( "userName"   , sql.VarChar( 150 ), userName ); 
             request.input( "passCode"   , sql.VarChar( 150 ), passCode ); 
             request.input( "salt"       , sql.VarChar( 150 ), salt ); 
+            request.input( "customerTypeName"  , sql.VarChar( 150 ), customerTypeName ); 
             request.input( "createdBy"  , sql.VarChar( 150 ), createdBy );
             // request.input( "updatedBy"  , sql.VarChar( 150 ), createdBy );
             
@@ -65,8 +51,7 @@ const register = async ( { sql, getConnection } ) => {
 
     };
 
-    return {
-        addLogin, 
+    return { 
         getLoginByUserName, 
         addUserRegister
     };

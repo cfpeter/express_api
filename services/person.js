@@ -16,7 +16,7 @@ module.exports = async () =>{
         try { 
             //1 validation
             //2 insert
-            const data = {
+            const data = { 
                 firstName: payload.firstName,
                 lastName : payload.lastName,
                 dob: payload.dob,
@@ -26,7 +26,41 @@ module.exports = async () =>{
                 otherPhone: payload.otherPhone
             }
             
-            return await db.person.addPerson(
+            return await db.person.addPerson(   
+                data.firstName,
+                data.lastName,
+                data.dob,
+                data.gender,
+                data.email,
+                data.cellPhone,
+                data.otherPhone
+            ) ;
+            
+        } catch(e) {
+            throw new Error(e.message)
+        }
+    }
+
+
+    const updatePerson = async (payload) => {
+        try { 
+            //1 validation
+            //2 insert
+            const data = {
+                personID: payload.PersonID,
+                customerID: payload.CustomerID,
+                firstName: payload.firstName,
+                lastName : payload.lastName,
+                dob: payload.dob,
+                gender: payload.gender,
+                email: payload.email,
+                cellPhone: payload.cellPhone,
+                otherPhone: payload.otherPhone
+            }
+            
+            return await db.person.updatePerson(
+                data.personID,
+                data.customerID,
                 data.firstName,
                 data.lastName,
                 data.dob,
@@ -43,7 +77,8 @@ module.exports = async () =>{
 
     return {
         getPerson,
-        addPerson
+        addPerson,
+        updatePerson
         
     }
 }
