@@ -17,8 +17,8 @@ const addUserRegister = async (req, res, next) => {
 const login = async (req, res, next) => {
     try { 
         const auth = await authService();   
-        const {userName , passWord} = req.body;
-        const token = await auth.login(userName , passWord); 
+        const {userName , password} = req.body;
+        const token = await auth.login(userName , password); 
         res.header('x-auth-token', token).status(200).send(token);
         next(); 
     } catch(e) {
@@ -27,8 +27,7 @@ const login = async (req, res, next) => {
 }
 
 const logout = async (req, res, next) =>{ 
-    try{
-        console.log('this is logout')
+    try{ 
         const auth = await authService();   
         await auth.logout();   
         res.status(200).send('success');

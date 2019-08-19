@@ -5,12 +5,10 @@ const listCustomerType = async (req, res, next) => {
     try { 
         //init the person service
         const cs = await customerService();  
-        const result = await cs.listCustomerType();
-        // console.log(result)
+        const result = await cs.listCustomerType(); 
         res.status(200).json(result) 
         next();
-    } catch(e) {
-        // console.log(e)
+    } catch(e) { 
         throw (e.message)
     }
 };

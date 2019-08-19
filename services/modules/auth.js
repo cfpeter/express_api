@@ -1,14 +1,14 @@
 const Joi = require('@hapi/joi')
 
 
-module.exports.loginValidation = async (userName, passWord) => {
+module.exports.loginValidation = async (userName, password) => {
     try {
         const schema = Joi.object().keys({
             userName: Joi.string().min(3).max(30).required(),
-            passWord: Joi.string().min(3).max(30).required()
+            password: Joi.string().min(3).max(30).required()
         }) 
 
-        await Joi.validate({userName, passWord}, schema , function (err, value) { 
+        await Joi.validate({userName, password}, schema , function (err, value) { 
             if(err !== null)
                 throw( err.details[0].message)
         });
@@ -24,7 +24,7 @@ module.exports.userRegisterValidation = async (
     gender,
     email,
     userName,
-    passCode,
+    password,
     customerTypeName
 ) => {
     try {
@@ -34,7 +34,7 @@ module.exports.userRegisterValidation = async (
             gender: Joi.string().min(3).max(30).required(),
             email: Joi.string().min(3).max(30).required(),
             userName: Joi.string().min(3).max(30).required(),
-            passCode: Joi.string().min(3).max(30).required(),
+            password: Joi.string().min(3).max(30).required(),
             customerTypeName: Joi.required(),
             
         }) 
@@ -45,7 +45,7 @@ module.exports.userRegisterValidation = async (
             gender,
             email,
             userName,
-            passCode,
+            password,
             customerTypeName
         }, schema , function (err, value) { 
             if(err !== null)

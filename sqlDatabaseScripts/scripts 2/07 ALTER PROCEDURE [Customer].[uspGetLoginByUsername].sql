@@ -24,7 +24,8 @@ BEGIN
 			l.[userName], 
 			l.[password], 
 			c.[CustomerID], 
-			p.[firstName] + ' ' + p.[lastName] as [name] 
+			p.[firstName] + ' ' + p.[lastName] as fullName,
+			c.[isAdmin]
 
 		FROM [Customer].[Login] l 
 

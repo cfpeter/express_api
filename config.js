@@ -15,7 +15,7 @@ const {
    SQL_SERVER,
    SQL_DATABASE,
    SQL_USER, 
-   SQL_PASSWORD,
+   SQL_password,
    SQL_PORT,
    jwtPrivateKey
 } = process.env;
@@ -30,7 +30,7 @@ assert( COOKIE_ENCRYPT_PWD, "COOKIE_ENCRYPT_PWD configuration is required." );
 assert( SQL_SERVER, "SQL_SERVER configuration is required." );
 assert( SQL_DATABASE, "SQL_DATABASE configuration is required." );
 assert( SQL_USER, "SQL_USER configuration is required." );
-assert( SQL_PASSWORD, "SQL_PASSWORD configuration is required." );
+assert( SQL_password, "SQL_password configuration is required." );
 assert( SQL_PORT, "SQL_PORT configuration is required." );
 
 // export the configuration information
@@ -43,7 +43,7 @@ module.exports = {
        server: SQL_SERVER,
        database: SQL_DATABASE, 
        user: SQL_USER,
-       password: SQL_PASSWORD,
+       password: SQL_password,
        port: SQL_PORT,
        options: {
            encrypt: sqlEncrypt,

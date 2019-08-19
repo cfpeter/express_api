@@ -12,7 +12,7 @@ CREATE TABLE [Customer].[Login](
 	[LoginID] [int] IDENTITY(1,1) NOT NULL ,
 	[CustomerID] [int] NOT NULL FOREIGN KEY REFERENCES [Customer].[Customer](CustomerID),
 	[UserName] [varchar](150) NOT NULL,
-	[PassCode] [varchar](255) NOT NULL,
+	[password] [varchar](255) NOT NULL,
 	[Salt] [varchar](255) NOT NULL,
 	[CreatedBy] [varchar](150) NOT NULL,
 	[CreatedDateTime] [datetime] NOT NULL DEFAULT CURRENT_TIMESTAMP,

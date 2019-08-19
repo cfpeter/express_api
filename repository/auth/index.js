@@ -26,7 +26,7 @@ const register = async ( { sql, getConnection } ) => {
     
 
     const addUserRegister = async ( { 
-        firstName, lastName, gender, email, userName, passCode, salt, createdBy,customerTypeName } ) => {
+        firstName, lastName, gender, email, userName, password, salt, createdBy,customerTypeName } ) => {
     
         try {
             const cnx = await getConnection();
@@ -36,7 +36,7 @@ const register = async ( { sql, getConnection } ) => {
             request.input( "gender"     , sql.VarChar( 100 ), gender );
             request.input( "email"      , sql.VarChar( 150 ), email ); 
             request.input( "userName"   , sql.VarChar( 150 ), userName ); 
-            request.input( "passCode"   , sql.VarChar( 150 ), passCode ); 
+            request.input( "password"   , sql.VarChar( 150 ), password ); 
             request.input( "salt"       , sql.VarChar( 150 ), salt ); 
             request.input( "customerTypeName"  , sql.VarChar( 150 ), customerTypeName ); 
             request.input( "createdBy"  , sql.VarChar( 150 ), createdBy );
