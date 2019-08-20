@@ -12,6 +12,14 @@ module.exports = async () =>{
     const addUserRegister = async (payload) => {
         try {   
             const {firstName, lastName,gender, email,userName,password, customerTypeName } = payload;
+
+            //get login by username
+            const userCheck = await db.auth.getLoginByUserName(userName)
+             
+            //if login doesn't exist 
+            if( userCheck.recordset.length) 
+                throw ('User Name already exist.'); 
+
             await userRegisterValidation(firstName, lastName,gender, email,userName,password, customerTypeName);
             
             //hash and salt the password
@@ -56,7 +64,7 @@ module.exports = async () =>{
     const login = async (userName, password) => {
         try{ 
             //first validate the login
-            // await loginValidation(userName, password); 
+            await loginValidation(userName, password); 
             
             //get login by username
             const {recordset} = await db.auth.getLoginByUserName(userName)
