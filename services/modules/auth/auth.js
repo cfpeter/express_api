@@ -1,4 +1,6 @@
 const Joi = require('@hapi/joi')
+const authError = require('./authError')
+
 
 
 module.exports.loginValidation = async (userName, password) => {
@@ -9,8 +11,8 @@ module.exports.loginValidation = async (userName, password) => {
         }) 
 
         await Joi.validate({userName, password}, schema , function (err, value) { 
-            if(err !== null)
-                throw( err.details[0].message)
+            if(err !== null) 
+                throw new authError(err.details[0].message, 400);     
         });
     } catch (error) {
         throw error

@@ -1,7 +1,6 @@
-const winston = require('winston');
+const logger = require('../startup/logger');  
 
-module.exports = (err, res, req, next) => {
-    winston.error(err.message, err) 
-
-    res.status(500).send('something went wrong.')
+module.exports = (err, res, req, next) => { 
+    logger.error(err.message, err)   
+    next(err)
 }

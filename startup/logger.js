@@ -1,31 +1,24 @@
-const winston = require('winston')
-
-module.exports = function() {
-
-  winston.createLogger({
+const winston = require('winston'); 
+// require('express-async-errors');
+ 
+const logger = winston.createLogger({
     level: 'info',
     format: winston.format.json(),
-    defaultMeta: { service: 'user-service' },
+    // defaultMeta: { service: 'user-service' },
     transports: [ 
-      new winston.transports.File({ filename: 'error.log', level: 'error' }),
-      new winston.transports.File({ filename: 'combined.log' })
+        new winston.transports.File({ filename: 'error.log', level: 'error' }),
+        new winston.transports.File({ filename: 'combined.log' }),
+        new winston.transports.Console({ format: winston.format.simple() })
+    ],
+    exceptionHandlers: [
+        new winston.transports.File({ filename: 'exceptions.log' }),
+        new winston.transports.Console({ format: winston.format.simple() })
     ]
-  });
-    
-  // if (process.env.NODE_ENV !== 'production') {
-  //     logger.add(
-  //       new winston.transports.Console({
-  //         format: winston.format.simple()
-  //       })
-  //     );
-  // }
-  new winston.ExceptionHandler(
-    new winston.transports.File({filename: 'uncaughtException.log'})
-  )
+});  
+process.on('unhandledRejection', (ex) => {
+  throw ex
+})
 
-  process.on('unhandledRejection' , ex =>{  
-    throw ex;
-  })
- 
-} 
+module.exports = logger
+
  

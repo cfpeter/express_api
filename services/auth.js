@@ -2,8 +2,10 @@ const dataClient = require('../repository');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const Joi = require('@hapi/joi')
-const {loginValidation , userRegisterValidation } = require('./modules/auth')
+const {loginValidation , userRegisterValidation } = require('./modules/auth/auth')
 const config = require('../config');
+const handler = require('./modules/auth/errorHandler')
+const authError = require('./modules/auth/authError')
 
 module.exports = async () =>{ 
     
@@ -61,8 +63,8 @@ module.exports = async () =>{
         }
     }
 
-    const login = async (userName, password) => {
-        try{ 
+    const login = handler( async (data) => {
+            const {userName , password } = data;
             //first validate the login
             await loginValidation(userName, password); 
             
@@ -71,14 +73,14 @@ module.exports = async () =>{
              
             //if login doesn't exist 
             if( !recordset.length) 
-                throw ('Invalid UserName or password.'); 
+                throw new authError('Invalid UserName or password', 400);     
                 
             //else, check incoming password with the matching user password
             const validpassword = await bcrypt.compare(password , recordset[0].password);
            
             //if doesn't matche then send error back 
             if(!validpassword) 
-                throw ('Invalid UserName or password.');  
+                throw new authError('Invalid UserName or password', 400);     
 
             //else we are good here send token back
             const token = jwt.sign({
@@ -89,14 +91,7 @@ module.exports = async () =>{
             }, config.jwtPrivateKey );
             
             return token; 
-
-        }catch(e){ 
-            if(!e.name)
-                throw new Error(e);
-            else
-                throw new Error('Something went wrong. Please try again later.')
-        }
-    };
+    });
  
     const logout = async () => {
         try{
