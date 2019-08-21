@@ -1,16 +1,14 @@
-const dataClient = require('../repository');
+const dataClient = require('../repository'); 
+const handler = require('./modules/person/errorHandler')
+const personError = require('./modules/person/personError')
 
 module.exports = async () =>{ 
     
     let db = await dataClient();  
 
-    const getPerson = async () => {
-        try { 
-            return await db.person.getPerson() ;
-        } catch(e) {
-            throw new Error(e.message)
-        }
-    }
+    const getPerson = handler (async () => { 
+        return await db.person.getPerson() ; 
+    })
 
     const addPerson = async (payload) => {
         try { 
@@ -42,10 +40,9 @@ module.exports = async () =>{
     }
 
 
-    const updatePerson = async (payload) => {
-        try { 
-            //1 validation
-            //2 insert
+    const updatePerson = handler( async (payload) => {
+      
+            //validation ex:joi
             const data = {
                 personID: payload.PersonID,
                 customerID: payload.CustomerID,
@@ -68,12 +65,8 @@ module.exports = async () =>{
                 data.email,
                 data.cellPhone,
                 data.otherPhone
-            ) ;
-            
-        } catch(e) {
-            throw new Error(e.message)
-        }
-    }
+            ); 
+    })
 
     return {
         getPerson,

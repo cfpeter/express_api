@@ -18,8 +18,8 @@ const addUserRegister = asyncError( async (req, res, next) => {
 
 const login = asyncError( async (req, res) => {
     const auth = await authService();    
-    const token = await auth.login( req.body ); 
-    res.header('x-auth-token', token).status(200).send(token); 
+    const token = await auth.login( req.body );  
+    res.header('x-auth-token', token).status(200).send(token);  
 })
 
 const logout = async (req, res, next) =>{ 

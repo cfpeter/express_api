@@ -1,20 +1,17 @@
 const dataClient = require('../repository');
+// const customerError = require('./modules/customer/customerError')
+const handler = require('./modules/customer/errorHandler')
 
 module.exports = async () =>{ 
     
     let db = await dataClient();  
 
-    const listCustomerType = async () => {
-        try { 
-            return await db.customer.listCustomerType();
-        } catch(e) {
-            throw new Error(e.message)
-        }
-    }
+    const listCustomerType = handler( async () => { 
+        return await db.customer.listCustomerType();  
+    })
 
     return {
         listCustomerType        
     }
 }
-
-// module.exports = person
+ 

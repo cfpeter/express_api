@@ -1,17 +1,13 @@
 const customerService = require('../services/customer')
+const asyncError = require('../middleware/async-error')
 
 
-const listCustomerType = async (req, res, next) => {
-    try { 
-        //init the person service
+const listCustomerType = asyncError(async (req, res, next) => { 
         const cs = await customerService();  
         const result = await cs.listCustomerType(); 
-        res.status(200).json(result) 
-        next();
-    } catch(e) { 
-        throw (e.message)
-    }
-};
+        console.log(result)
+        res.status(200).json(result)  
+});
 
 
 

@@ -50,8 +50,8 @@ module.exports.userRegisterValidation = async (
             password,
             customerTypeName
         }, schema , function (err, value) { 
-            if(err !== null)
-                throw( err.details[0].message)
+            if(err !== null) 
+                throw new authError (err.details[0].message , 400); 
         });
     } catch (error) {
         throw error

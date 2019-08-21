@@ -1,4 +1,5 @@
 const personService = require('../services/person')
+const asyncError = require('../middleware/async-error')
 
 
 const getPerson = async (req, res, next) => {
@@ -16,30 +17,19 @@ const getPerson = async (req, res, next) => {
 
  
 
-const addPerson = async (req, res, next) =>{
-    try {
-        const ps = await personService();   
-        
+const addPerson = asyncError(async (req, res, next) =>{ 
+        const ps = await personService();    
         const result = await ps.addPerson(req.body); 
-        res.status(200).send(result)
-        next()
-    } catch (error) {
-        throw new Error(error)
-    }
-}
+        res.status(200).send(result) 
+})
 
-const updatePerson = async (req, res, next) =>{
-    try { 
+const updatePerson = asyncError(async (req, res, next) =>{ 
         const ps = await personService();   
         
         const result = await ps.updatePerson(req.body); 
         res.status(200).send(result)
-        next()
-    } catch (error) {
-        res.status(401).json(error)
-        throw new Error(error)
-    }
-}
+        next() 
+})
 
  
 module.exports = {
