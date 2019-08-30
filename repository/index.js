@@ -3,7 +3,8 @@ const person = require( "./person" );
 const auth = require('./auth')
 const user = require('./user')
 const customer = require('./customer')
-const sql = require( "mssql" );
+const sql = require( "mssql" ); 
+const logger = require('../startup/logger') 
 
 const client = async () => {
    let pool = null;
@@ -21,8 +22,8 @@ const client = async () => {
            // set the pool to null to ensure
            // a new one will be created by getConnection()
            pool = null;
-           server.log( [ "error", "data" ], "closePool error" );
-           server.log( [ "error", "data" ], err );
+           logger.error( "closePool error" );
+           logger.error( err );
        }
    };
 
@@ -40,12 +41,12 @@ const client = async () => {
             .connect()
             .then(pool => {
 
-                console.log('Connected to MSSQL' )
+                logger.info('Connected to MSSQL' )
                 return pool
             })
             .catch(async err => {
-                console.log( [ "error", "data" ], "connection pool error" );
-                console.log( [ "error", "data" ], err );
+                logger.error( "connection pool error" );
+                logger.error( err );
                 await closePool();
             } );  
 

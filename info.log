@@ -1,0 +1,314 @@
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-22T03:54:02.630Z","status":400,"description":"","level":"error","message":"Invalid UserName or password1Invalid UserName or password1","stack":"authError: Invalid UserName or password1\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-22T03:57:49.743Z","status":400,"description":"","level":"error","message":"Invalid UserName or password1Invalid UserName or password1","stack":"authError: Invalid UserName or password1\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"name":"authError","date":"2019-08-22T04:01:54.195Z","status":500,"description":"password is not defined","level":"error","message":"Something went wrong. Please try again laterSomething went wrong. Please try again later","stack":"authError: Something went wrong. Please try again later\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:12:23)"}
+{"name":"authError","date":"2019-08-22T04:49:50.952Z","status":500,"description":"password is not defined","level":"error","message":"Something went wrong. Please try again laterSomething went wrong. Please try again later","stack":"authError: Something went wrong. Please try again later\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:12:23)"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-22T05:13:09.576Z","status":400,"description":"","level":"error","message":"Invalid UserName or password2Invalid UserName or password2","stack":"authError: Invalid UserName or password2\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-22T05:13:46.506Z","status":400,"description":"","level":"error","message":"Invalid UserName or password2Invalid UserName or password2","stack":"authError: Invalid UserName or password2\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-22T05:14:42.419Z","status":400,"description":"","level":"error","message":"Invalid UserName or password2Invalid UserName or password2","stack":"authError: Invalid UserName or password2\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-22T23:25:03.215Z","status":400,"description":"","level":"error","message":"Invalid UserName or passwordInvalid UserName or password","stack":"authError: Invalid UserName or password\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-23T00:17:44.378Z","status":400,"description":"","level":"error","message":"Invalid UserName or passwordInvalid UserName or password","stack":"authError: Invalid UserName or password\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-23T00:34:24.025Z","status":400,"description":"","level":"error","message":"Invalid UserName or passwordInvalid UserName or password","stack":"authError: Invalid UserName or password\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-23T00:39:22.723Z","status":400,"description":"","level":"error","message":"Invalid UserName or passwordInvalid UserName or password","stack":"authError: Invalid UserName or password\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-23T00:39:25.841Z","status":400,"description":"","level":"error","message":"Invalid UserName or passwordInvalid UserName or password","stack":"authError: Invalid UserName or password\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"123Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-23T00:48:36.299Z","status":400,"description":"","level":"error","message":"\"userName\" is not allowed to be empty\"userName\" is not allowed to be empty","stack":"authError: \"userName\" is not allowed to be empty\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"level":"error","message":"lineReader is not definedlineReader is not defined","stack":"ReferenceError: lineReader is not defined\n    at Object.getLog (C:\\Projects\\ex_team\\services\\logger.js:11:48)\n    at asyncError (C:\\Projects\\ex_team\\controller\\logger.js:9:32)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-23T10:55:45.220Z","status":400,"description":"","level":"error","message":"Invalid UserName or passwordInvalid UserName or password","stack":"authError: Invalid UserName or password\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-25T01:11:01.492Z","status":400,"description":"","level":"error","message":"Invalid UserName or passwordInvalid UserName or password","stack":"authError: Invalid UserName or password\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-25T01:11:18.121Z","status":400,"description":"","level":"error","message":"Invalid UserName or passwordInvalid UserName or password","stack":"authError: Invalid UserName or password\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-25T01:11:38.034Z","status":400,"description":"","level":"error","message":"Invalid UserName or passwordInvalid UserName or password","stack":"authError: Invalid UserName or password\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-25T01:12:21.102Z","status":400,"description":"","level":"error","message":"Invalid UserName or passwordInvalid UserName or password","stack":"authError: Invalid UserName or password\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-25T01:12:23.620Z","status":400,"description":"","level":"error","message":"Invalid UserName or passwordInvalid UserName or password","stack":"authError: Invalid UserName or password\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-25T01:12:28.352Z","status":400,"description":"","level":"error","message":"Invalid UserName or passwordInvalid UserName or password","stack":"authError: Invalid UserName or password\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-25T01:12:48.986Z","status":400,"description":"","level":"error","message":"Invalid UserName or passwordInvalid UserName or password","stack":"authError: Invalid UserName or password\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-25T01:13:03.400Z","status":400,"description":"","level":"error","message":"Invalid UserName or passwordInvalid UserName or password","stack":"authError: Invalid UserName or password\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-25T01:13:23.599Z","status":400,"description":"","level":"error","message":"Invalid UserName or passwordInvalid UserName or password","stack":"authError: Invalid UserName or password\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-25T01:13:35.950Z","status":400,"description":"","level":"error","message":"Invalid UserName or passwordInvalid UserName or password","stack":"authError: Invalid UserName or password\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-25T01:14:04.959Z","status":401,"description":"","level":"error","message":"Invalid UserName or passwordInvalid UserName or password","stack":"authError: Invalid UserName or password\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-25T01:14:31.879Z","status":400,"description":"","level":"error","message":"Invalid UserName or passwordInvalid UserName or password","stack":"authError: Invalid UserName or password\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-25T04:28:30.166Z","status":400,"description":"","level":"error","message":"Invalid UserName or passwordInvalid UserName or password","stack":"authError: Invalid UserName or password\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-25T04:28:49.731Z","status":400,"description":"","level":"error","message":"Invalid user name or passwordInvalid user name or password","stack":"authError: Invalid user name or password\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-25T04:30:27.302Z","status":400,"description":"","level":"error","message":"Invalid user name or passwordInvalid user name or password","stack":"authError: Invalid user name or password\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-28T02:36:21.400Z","status":400,"description":"","level":"error","message":"Invalid user name or passwordInvalid user name or password","stack":"authError: Invalid user name or password\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"name":"authError","date":"2019-08-28T02:37:21.721Z","status":400,"description":"","level":"error","message":"Invalid user name or passwordInvalid user name or password","stack":"authError: Invalid user name or password\n    at Object.login (C:\\Projects\\ex_team\\services\\modules\\auth\\errorHandler.js:10:23)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Server listening on port 3000 !!!","level":"info"}
+{"message":"Connected to MSSQL","level":"info"}

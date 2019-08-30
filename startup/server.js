@@ -2,7 +2,8 @@ const express = require('express');
 const server = express(); 
 const routes = require('../routes');
 const allowOrign = require('../middleware/Allow-Origin');
-const error = require('../middleware/error') 
+const error = require('../middleware/error') ;
+const logger = require('./logger') 
 
 module.exports = async (config) => {
     const { port } = config; 
@@ -15,7 +16,7 @@ module.exports = async (config) => {
     server.use(error);
 
     
-    server.listen(port, () => console.log( `Server listening on port ${port} !!!`))
+    server.listen(port, () => logger.info( `Server listening on port ${port} !!!`))
 }
 
 

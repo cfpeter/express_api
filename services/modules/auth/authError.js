@@ -10,7 +10,7 @@ const authError = class authError extends Error {
     
         this.name = 'authError';  
         this.date = new Date();
-        this.status = status || 400 ;
+        this.status = status || 500 ;
         this.description = description || '';
     }
 }

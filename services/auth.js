@@ -56,25 +56,25 @@ module.exports = async () =>{
     const login = handler( async (data) => { 
             const {userName , password } = data;
             //first validate the login
-            await loginValidation(userName, password); 
+            await loginValidation(userName, password);  
             
             //get login by username
             const {recordset} = await db.auth.getLoginByUserName(userName)
              
-            //if login doesn't exist 
+            //if login doesn't exist   
             if( !recordset.length) 
-                throw new authError('Invalid UserName or password1', 400);     
+                throw new authError('Invalid user name or password', 400);     
                 
             //else, check incoming password with the matching user password
             const validpassword = await bcrypt.compare(password , recordset[0].password);
            
             //if doesn't matche then send error back 
             if(!validpassword) 
-                throw new authError('Invalid UserName or password2', 400);     
+                throw new authError('Invalid user name or password', 400);     
 
             //else we are good here send token back
             const token = jwt.sign({
-                customerID: recordset[0].CustomerID, 
+                customerID: recordset[0].CustomerID,  
                 fullName:   recordset[0].fullName,
                 isAdmin:    recordset[0].isAdmin,
                 userName:   recordset[0].userName
@@ -82,17 +82,13 @@ module.exports = async () =>{
             return token
     });
  
-    const logout = async () => {
-        try{
+    const logout = handler( async () => { 
             const obj = {
                 success : true,
                 errors: []
             }
-            return obj;
-        }catch(e){
-            throw new Error(e)
-        }
-    }
+            return obj; 
+    })
 
     
     return {

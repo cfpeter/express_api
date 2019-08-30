@@ -1,5 +1,4 @@
-const userService = require('../services/user')
-
+const userService = require('../services/user') 
 const asyncError = require('../middleware/async-error')
 
 const getUserById = asyncError(async (req, res, next) => {

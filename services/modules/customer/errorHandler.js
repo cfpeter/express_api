@@ -4,8 +4,7 @@ module.exports = function (handler) {
     return async () => {
         try { 
             return await handler()
-        } catch (ex) {
-            console.log('this is customer', ex)
+        } catch (ex) { 
             if(['customerError'].includes(ex.name)){
                 throw new customerError(ex.message, ex.status) 
             } else{

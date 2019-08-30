@@ -3,10 +3,9 @@ const asyncError = require('../middleware/async-error')
 
 
 const listCustomerType = asyncError(async (req, res, next) => { 
-        const cs = await customerService();  
-        const result = await cs.listCustomerType(); 
-        console.log(result)
-        res.status(200).json(result)  
+    const cs = await customerService();  
+    const result = await cs.listCustomerType();  
+    res.status(200).json(result)  
 });
 
 
