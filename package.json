@@ -12,7 +12,7 @@
   "dependencies": {
     "@hapi/joi": "^15.1.0",
     "assert": "^2.0.0",
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "bluebird": "^3.5.5",
     "compression": "^1.7.4",
     "dotenv": "^8.0.0",
